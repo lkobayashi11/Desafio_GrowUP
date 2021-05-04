@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html,body{
+    margin:0;
+    padding:0;
+    color: #9b9b9b;
+    font-family: Roboto;
+    }
+
+header {
+    background-color:#00796B;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+header .navigation {
+    display: flex;
+        /* alinhamento horizontal */
+    justify-content: space-between;
+        /* alinhamento vertical */
+    align-items: center;
+    }
+   
+header nav ul {
+    list-style: none;
+    }
+    
+header nav ul li {
+    display: inline-block;
+    padding: 10px;
+    }
+    
+header nav ul li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }    
+
+ .container {
+        width: 1200px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    
+main {
+        min-height: 80vh;
+    }
+ 
+section.banner {
+        padding: 50px;
+    }
+    
+section.banner .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+section.banner .container .texto h2 {
+        color: #00796B;
+        font-family: Roboto;
+    }
+
+section.banner .container .texto p {
+        color: #9B9B9B;
+        font-family: Roboto;
+    }
+  
+footer {
+        text-align: center;
+        background-color: #C4C4C4;
+        color:#ffff;
+        padding: 10px;
+    }
+
+/* SOBRE */
+section.introducao-sobre {
+        padding: 50px 0;
+    }
+    
+section.introducao-sobre h1 {
+        color: #00796B;
+        font-family: Roboto;
+        font-size: 50px;
+        text-transform: uppercase;
+    }
+
+section.introducao-sobre h2 {
+        color: #00796B;
+        font-family: Roboto;
+        text-transform: uppercase;
+    }
+    
+.introducao-sobre .intro {
+        display: flex;
+        align-items: center;
+        font-family: Roboto;
+    }
+    
+section.video-sobre iframe {
+        justify-content: space-between;
+        width: 80%;
+        height: 500px;
+    }
+
+section.missao-valores {
+        text-align: center;
+    }
+
+section.missao-valores article h2{
+        font-size: 30px;
+        font-family: Roboto;
+        color: #00796B;
+        text-align: center;
+    }
+
+section.missao-valores article {
+        padding: 15px 30px;
+    }
+
+
+/* SERVICOS */
+
+h1 {
+        color: #00796B;
+        font-family: Roboto;
+        font-size: 50px;
+        text-transform: uppercase;
+    }
+
+section.desenvolvimento .container,
+section.marketing .container,
+section.consultoria .container{
+        display:flex;
+        justify-content:space-between;
+        align-items: center;
+        font-family: Roboto;
+        padding: 40px 0;
+    }
+
+h2 {
+        color: #00796B;
+        font-family: Roboto;
+        text-transform: uppercase;
+    }
+
+section.marketing .container{
+        flex-direction: row-reverse
+    }
+
+
+/* CONTATO */
+.contato{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contato form input:not([type="radio"]), 
+.contato form textarea{
+    width: 100%;
+    padding: 5px;
+}
+
+.contato form label{
+    margin: 10px 0 5px;
+    display: inline-block;
+}
+
+.contato form button{
+    border: none;
+    background-color: #00796B;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px;
+    width: 100%;
+    margin: 15 px 0;
+}
+
+.contato .info{
+    padding: 15px 30px;
+
+}
+
+.contato .info iframe {
+    max-width: 100%;
+    width: 600px;
+    height: 250px;
+
+}
+
+/* ORCAMENTO*/
+.orcamento{
+    display: flex;
+    justify-content: space-between;
+}
+
+.orcamento form input:not([type="checkbox"],[type="radio"]), 
+.orcamento form textarea{
+    width: 100%;
+    padding: 5px;
+}
+
+.orcamento form label{
+    margin: 10px 0 5px;
+    display: inline-block;
+}
+
+.orcamento form button{
+    border: none;
+    background-color: #00796B;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px;
+    width: 100%;
+    margin: 15 px 0;
+}
+
+.orcamento .info{
+    padding: 15px 30px;
+
+}
