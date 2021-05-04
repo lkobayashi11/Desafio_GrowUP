@@ -37,30 +37,65 @@
                          <label for="email">Email</label>
                          <input type="email" id="email" name="email" required>
 
-                         <label for="tel">Telefone</label>
-                         <input type="tel" id="tel" name="tel" required>
- 
+                         <label for="telefone">Telefone</label>
+                         <input type="tel" id="telefone" name="telefone" required>
                          
-                         <h3>Serviços:</h3>
- 
-                         <input type="checkbox" name="servico" id="servico_web" value="Desenvolvimento Web">
-                         <label for="servico_web"> Desenvolvimento Web</label>
- 
-                         <input type="checkbox" name="servico_" id="servico__marketing" value="Marketing Digital">
-                         <label for="servico__marketing">Marketing Digital</label>
- 
-                         <input type="checkbox" name="servico_" id="servico__consultoria" value="Consultoria UX">
-                         <label for="servico__consultoria">Consultoria UX</label>  
-                         
-                         <p></p>
-                         <input type="radio" name="entrega_" id="entrega__urgencia" value="Urgência">
-                         <label for="entrega_urgencia">Urgência</label>      
-                         
+                         <fieldset>
+                             <legend>Serviços</legend>    
+                                <input type="checkbox" name="servico" id="servico_web" value="Desenvolvimento Web">
+                                <label for="servico_web"> Desenvolvimento Web</label>
+        
+                                <input type="checkbox" name="servico_" id="servico__marketing" value="Marketing Digital">
+                                <label for="servico__marketing">Marketing Digital</label>
+        
+                                <input type="checkbox" name="servico_" id="servico__consultoria" value="Consultoria UX">
+                                <label for="servico__consultoria">Consultoria UX</label>  
+                        </fieldset>
+                        
+                        <fieldset>
+                            <legend>Urgência na entrega</legend> 
+                                <input type="radio" name="urgencia" id="urgencia_sim" value="Sim">
+                                <label for="urgencia_sim">Sim</label>  
+
+                                <input type="radio" name="urgencia" id="urgencia_nao" value="Nao">
+                                <label for="urgencia_nao">Não</label>  
+                        </fieldset>
+                      
+                        <label for="data_entrega">Data de Entrega</label>                   
+                        <input type="date" name= "data_entrega" id = "data_entrega">
+
+                        <label for="descricao">Descrição</label>
+                        <textarea id="descricao" name="descrcao" cols="30" rows="5" required></textarea>
+
+                        <label for="anexos">Anexos</label>                   
+                        <input type="file" name= "anexos" id = "anexos">
+
+                        <label for="publico_alvo">Qual seu público alvo do projeto?</label>                   
+                        <input text="text" name= "publico_alvo" id ="publico_alvo">
+                    
+                        <label for="forma_pagamento">Forma de Pagamento</label>                   
+                        <select name= "forma_pagamento" id = "forma_pagamento">
+                            <option selected disabled>Selecione uma opção</option>
+                            <option value="Débito">Débito</option>
+                            <option value="Crédito">Crédito</option>
+                            <option value="Tranferência bancária">Tranferência bancária</option>
+                            <option value="Boleto">Boleto</option>                             
+                        </select>    
+                   
+                        <label for="origem_cliente">Como conheceu a Grow Up? </label>
+                        <select name= "origem_cliente" id = "origem_cliente">
+                            <option selected disabled>Selecione uma opção</option>
+                            <option value="Facebook">Facebook</option>
+                            <option value="Instagram">Instagram</option>
+                            <option value="LinkedIn">LinkedIn</option>
+                            <option value="Google">Google</option>    
+                            <option value="Amarelinho">Amarelinho</option>  
+                            <option value="Outro">Outro</option>                         
+                        </select>    
+
                         <p></p>
-                         <label for="descricao">Descrição</label>
-                         <textarea id="descricao" name="descrcao" cols="30" rows="5" required></textarea>
-                                               
-                        <button type="submit">Enviar</button>                       
+                        <button type="submit">Enviar</button>    
+                                          
                     </form>
                 </div>
             </div>

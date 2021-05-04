@@ -207,9 +207,16 @@ section.marketing .container{
 }
 
 .orcamento form input:not([type="checkbox"],[type="radio"]), 
-.orcamento form textarea{
+.orcamento form textarea,
+.orcamento form select{
     width: 100%;
     padding: 5px;
+}
+
+.orcamento form input:not([type="checkbox"],[type="radio"]), 
+.orcamento form textarea,
+.orcamento form select{
+    outline-color: #00796B;
 }
 
 .orcamento form label{
@@ -230,4 +237,13 @@ section.marketing .container{
 .orcamento .info{
     padding: 15px 30px;
 
+}
+
+.orcamento form fieldset {
+    margin: 15px 0;
+    border-color: white
+}
+
+.orcamento form input{
+    outline-color: #00796B;
 }
